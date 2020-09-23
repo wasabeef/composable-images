@@ -25,6 +25,10 @@ android {
     compose = true
   }
 
+  lintOptions {
+    disable("InvalidFragmentVersionForActivityResult")
+  }
+
   composeOptions {
     kotlinCompilerVersion = Libraries.kotlinVersion
     kotlinCompilerExtensionVersion = Libraries.Compose.composeVersion

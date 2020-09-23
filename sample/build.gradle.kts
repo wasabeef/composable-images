@@ -38,6 +38,10 @@ android {
     compose = true
   }
 
+  lintOptions {
+    disable("InvalidFragmentVersionForActivityResult")
+  }
+
   packagingOptions {
     exclude("META-INF/*.kotlin_module")
   }
