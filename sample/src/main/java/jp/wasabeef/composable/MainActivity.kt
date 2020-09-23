@@ -19,6 +19,7 @@ package jp.wasabeef.composable
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.ScrollableColumn
+import androidx.compose.foundation.ScrollableRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.preferredWidth
@@ -52,22 +53,22 @@ fun body() {
   val context = ContextAmbient.current
   MaterialTheme {
     ScrollableColumn(modifier = Modifier.padding(12.dp)) {
-      Row {
+      ScrollableRow {
         PicassoImage(
-          model = "https://i.pinimg.com/originals/d5/44/ff/d544ffca4ecb461fc19da7e384cbc6d5.gif",
+          model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
           modifier = Modifier.preferredWidth(120.dp),
         ) {
           centerInside()
           rotate(90f)
         }
         PicassoImage(
-          model = "https://i.pinimg.com/originals/d5/44/ff/d544ffca4ecb461fc19da7e384cbc6d5.gif",
+          model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
           modifier = Modifier.preferredWidth(240.dp))
       }
 
-      Row {
+      ScrollableRow {
         GlideImage(
-          model = "https://i.pinimg.com/originals/d5/44/ff/d544ffca4ecb461fc19da7e384cbc6d5.gif",
+          model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
           modifier = Modifier.preferredWidth(120.dp),
           options = RequestOptions().transform(
             BlurTransformation(
@@ -78,11 +79,11 @@ fun body() {
           )
         )
         GlideImage(
-          model = "https://i.pinimg.com/originals/d5/44/ff/d544ffca4ecb461fc19da7e384cbc6d5.gif",
+          model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
           modifier = Modifier.preferredWidth(240.dp))
       }
 
-      Row {
+      ScrollableRow {
         CoilImage(
           model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
           modifier = Modifier.preferredWidth(240.dp),
@@ -93,7 +94,7 @@ fun body() {
           )
         }
         CoilImage(
-          model = "https://i.pinimg.com/originals/d5/44/ff/d544ffca4ecb461fc19da7e384cbc6d5.gif",
+          model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
           modifier = Modifier.preferredWidth(240.dp)
         )
       }
