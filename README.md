@@ -53,7 +53,11 @@ dependencies {
 CoilImage(
   model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
   modifier = Modifier.preferredWidth(240.dp)
-)
+) {
+  transformations(
+    BlurTransformation(context, 25f, 2f)
+  )
+}
 ```
 
 #### For [Glide] <a href="https://github.com/coil-kt/coil"><img src="https://github.com/wasabeef/transformers/raw/main/art/glide.png" width="12px"/></a>
