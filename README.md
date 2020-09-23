@@ -43,7 +43,7 @@ repositories {
 }
 ```
 
-#### For [Coil] <a href="https://github.com/bumptech/glide"><img src="https://github.com/wasabeef/transformers/raw/main/art/glide.png" width="12px"/></a>
+#### For [Coil] <a href="https://github.com/bumptech/glide"><img src="https://github.com/wasabeef/transformers/raw/main/art/coil.png" width="12px"/></a>
 ```gradle
 dependencies {
   implementation 'jp.wasabeef.composable:coil:1.x.x'
