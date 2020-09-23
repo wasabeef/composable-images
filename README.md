@@ -46,7 +46,7 @@ repositories {
 For [Coil]
 ```gradle
 dependencies {
-  implementation 'jp.wasabeef.transformers:coil:1.x.x'
+  implementation 'jp.wasabeef.composable:coil:1.x.x'
 }
 ```
 ```kotlin
@@ -59,8 +59,7 @@ CoilImage(
 For [Glide]
 ```gradle
 dependencies {
-  implementation 'jp.wasabeef.transformers:glide:1.x.x'
-  implementation 'jp.wasabeef.transformers:glide-gpu:1.x.x' // Use the GPU Filters 
+  implementation 'jp.wasabeef.composable:glide:1.x.x'
 }
 ```
 ```kotlin
@@ -73,8 +72,7 @@ GlideImage(
 For [Picasso]
 ```gradle
 dependencies {
-  implementation 'jp.wasabeef.transformers:picasso:1.x.x'
-  implementation 'jp.wasabeef.transformers:picasso-gpu:1.x.x' // Use the GPU Filters 
+  implementation 'jp.wasabeef.composable:picasso:1.x.x'
 }
 ```
 ```kotlin
