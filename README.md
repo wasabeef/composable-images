@@ -43,7 +43,7 @@ repositories {
 }
 ```
 
-For [Coil]
+#### For [Coil] <a href="https://github.com/bumptech/glide"><img src="https://github.com/wasabeef/transformers/raw/main/art/glide.png" width="12px"/></a>
 ```gradle
 dependencies {
   implementation 'jp.wasabeef.composable:coil:1.x.x'
@@ -56,7 +56,7 @@ CoilImage(
 )
 ```
 
-For [Glide]
+#### For [Glide] <a href="https://github.com/coil-kt/coil"><img src="https://github.com/wasabeef/transformers/raw/main/art/glide.png" width="12px"/></a>
 ```gradle
 dependencies {
   implementation 'jp.wasabeef.composable:glide:1.x.x'
@@ -69,7 +69,7 @@ GlideImage(
   options = RequestOptions().centerCrop())
 ```
 
-For [Picasso]
+For [Picasso] <a href="https://github.com/square/picasso"><img src="https://github.com/wasabeef/transformers/raw/main/art/picasso.jpg" width="12px"/></a>
 ```gradle
 dependencies {
   implementation 'jp.wasabeef.composable:picasso:1.x.x'
