@@ -38,6 +38,10 @@ android {
     compose = true
   }
 
+  packagingOptions {
+    exclude("META-INF/*.kotlin_module")
+  }
+
   composeOptions {
     kotlinCompilerVersion = Libraries.kotlinVersion
     kotlinCompilerExtensionVersion = Libraries.Compose.composeVersion
