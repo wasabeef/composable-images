@@ -1,11 +1,11 @@
 object BuildConfig {
   const val compileSdk = 30
 
-  const val appId = "jp.wasabeef.transformers"
+  const val appId = "jp.wasabeef.composable"
   const val minSdk = 21
   const val targetSdk = 30
   const val appVersionCode = 1
-  const val appVersionName = "0.0.2"
+  const val appVersionName = "0.0.1"
 
   const val testRunner = "androidx.test.runner.AndroidJUnitRunner"
 }
