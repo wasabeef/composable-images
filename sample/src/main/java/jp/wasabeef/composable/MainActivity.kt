@@ -20,7 +20,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.ScrollableColumn
 import androidx.compose.foundation.ScrollableRow
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.preferredWidth
 import androidx.compose.material.MaterialTheme
@@ -37,7 +36,6 @@ import jp.wasabeef.composable.picasso.PicassoImage
 import jp.wasabeef.transformers.coil.CropCenterTransformation
 import jp.wasabeef.transformers.coil.MaskTransformation
 import jp.wasabeef.transformers.glide.BlurTransformation
-import jp.wasabeef.transformers.glide.gpu.PixelationFilterTransformation
 
 class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
@@ -63,7 +61,8 @@ fun body() {
         }
         PicassoImage(
           model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
-          modifier = Modifier.preferredWidth(240.dp))
+          modifier = Modifier.preferredWidth(240.dp)
+        )
       }
 
       ScrollableRow {
@@ -80,7 +79,8 @@ fun body() {
         )
         GlideImage(
           model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
-          modifier = Modifier.preferredWidth(240.dp))
+          modifier = Modifier.preferredWidth(240.dp)
+        )
       }
 
       ScrollableRow {
