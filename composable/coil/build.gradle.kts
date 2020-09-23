@@ -50,9 +50,6 @@ dependencies {
   implementation(Libraries.Compose.runtime)
   implementation(Libraries.Compose.foundation)
   implementation(Libraries.Compose.ui)
-  implementation(Libraries.Compose.layout)
-  implementation(Libraries.Compose.material)
-  implementation(Libraries.Compose.tooling)
 }
 
 extra.apply {
