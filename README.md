@@ -122,7 +122,7 @@ $ ./gradlew ktlint
 
 ```
 $ ./gradlew clean install build
-$ ./gradlew bintrayUpload -PbintrayUser=******** -PbintrayKey=****************************************
+$ ./gradlew bintrayUpload -PbintrayUser=******** -PbintrayKey=***************
 ```
 
 
