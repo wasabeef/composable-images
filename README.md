@@ -76,7 +76,7 @@ GlideImage(
   options = RequestOptions().centerCrop())
 ```
 
-For [Picasso] <a href="https://github.com/square/picasso"><img src="https://github.com/wasabeef/transformers/raw/main/art/picasso.jpg" width="12px"/></a>
+#### For [Picasso] <a href="https://github.com/square/picasso"><img src="https://github.com/wasabeef/transformers/raw/main/art/picasso.jpg" width="12px"/></a>
 ```gradle
 dependencies {
   implementation 'jp.wasabeef.composable:picasso:1.x.x'
