@@ -42,7 +42,7 @@ import coil.target.Target
 fun CoilImage(
   model: Any,
   modifier: Modifier = Modifier,
-  customize: ImageRequest.Builder.() -> Unit = {}
+  builder: ImageRequest.Builder.() -> Unit = {}
 ) {
   WithConstraints(modifier) {
     val width =
@@ -76,7 +76,7 @@ fun CoilImage(
         .data(model)
         .size(size)
         .scale(Scale.FILL)
-        .apply { customize(this) }
+        .apply { builder(this) }
         .target(target)
 
       val requestDisposable = Coil.imageLoader(context).enqueue(request.build())
