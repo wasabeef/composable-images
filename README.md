@@ -1,7 +1,7 @@
 <p align="center">
 
   <a href="https://developer.android.com/jetpack/compose">
-    <img src="https://github.com/wasabeef/transformers/raw/main/art/jetpack-compose.svg" width="240px"/>
+    <img src="https://github.com/wasabeef/transformers/raw/main/art/jetpack-compose.svg" width="480px"/>
   </a>
 </p>
 <p align="center">
