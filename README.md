@@ -39,7 +39,7 @@ A simple library for loading into Jetpack Compose Image using for [Coil], [Glide
 ### Requirements
 - Android 5.0+ Lollipop (API level 21)
 
-### Gradle settings
+### Repository
 ```gradle
 repositories {
   jcenter()
