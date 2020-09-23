@@ -60,7 +60,7 @@ fun body() {
           rotate(90f)
         }
         PicassoImage(
-          model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
+          model = R.drawable.picasso,
           modifier = Modifier.preferredWidth(240.dp)
         )
       }
@@ -78,7 +78,7 @@ fun body() {
           )
         )
         GlideImage(
-          model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
+          model = R.drawable.glide,
           modifier = Modifier.preferredWidth(240.dp)
         )
       }
@@ -94,7 +94,7 @@ fun body() {
           )
         }
         CoilImage(
-          model = "https://images.unsplash.com/photo-1588952159215-a4b39193464e",
+          model = R.drawable.coil,
           modifier = Modifier.preferredWidth(240.dp)
         )
       }

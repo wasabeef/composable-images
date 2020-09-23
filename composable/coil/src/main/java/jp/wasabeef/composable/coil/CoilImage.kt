@@ -17,6 +17,8 @@
 package jp.wasabeef.composable.coil
 
 import android.graphics.drawable.Drawable
+import android.net.Uri
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.runtime.Composable
@@ -37,9 +39,46 @@ import coil.size.OriginalSize
 import coil.size.PixelSize
 import coil.size.Scale
 import coil.target.Target
+import java.io.File
 
 @Composable
 fun CoilImage(
+  @DrawableRes model: Int,
+  modifier: Modifier = Modifier,
+  builder: ImageRequest.Builder.() -> Unit = {}
+) {
+  CoilImagePrivate(model = model, modifier = modifier, builder = builder)
+}
+
+@Composable
+fun CoilImage(
+  model: File,
+  modifier: Modifier = Modifier,
+  builder: ImageRequest.Builder.() -> Unit = {}
+) {
+  CoilImagePrivate(model = model, modifier = modifier, builder = builder)
+}
+
+@Composable
+fun CoilImage(
+  model: Uri,
+  modifier: Modifier = Modifier,
+  builder: ImageRequest.Builder.() -> Unit = {}
+) {
+  CoilImagePrivate(model = model, modifier = modifier, builder = builder)
+}
+
+@Composable
+fun CoilImage(
+  model: String,
+  modifier: Modifier = Modifier,
+  builder: ImageRequest.Builder.() -> Unit = {}
+) {
+  CoilImagePrivate(model = model, modifier = modifier, builder = builder)
+}
+
+@Composable
+private fun CoilImagePrivate(
   model: Any,
   modifier: Modifier = Modifier,
   builder: ImageRequest.Builder.() -> Unit = {}

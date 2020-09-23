@@ -18,6 +18,8 @@ package jp.wasabeef.composable.picasso
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
+import android.net.Uri
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -34,10 +36,47 @@ import androidx.compose.ui.graphics.nativeCanvas
 import com.squareup.picasso.Picasso
 import com.squareup.picasso.RequestCreator
 import com.squareup.picasso.Target
+import java.io.File
+
+@Composable
+fun PicassoImage(
+  @DrawableRes model: Int,
+  modifier: Modifier = Modifier.fillMaxWidth(),
+  request: RequestCreator.() -> RequestCreator = { this },
+) {
+  PicassoImagePrivate(model = model, modifier = modifier, request = request)
+}
+
+@Composable
+fun PicassoImage(
+  model: File,
+  modifier: Modifier = Modifier.fillMaxWidth(),
+  request: RequestCreator.() -> RequestCreator = { this },
+) {
+  PicassoImagePrivate(model = model, modifier = modifier, request = request)
+}
+
+@Composable
+fun PicassoImage(
+  model: Uri,
+  modifier: Modifier = Modifier.fillMaxWidth(),
+  request: RequestCreator.() -> RequestCreator = { this },
+) {
+  PicassoImagePrivate(model = model, modifier = modifier, request = request)
+}
 
 @Composable
 fun PicassoImage(
   model: String,
+  modifier: Modifier = Modifier.fillMaxWidth(),
+  request: RequestCreator.() -> RequestCreator = { this },
+) {
+  PicassoImagePrivate(model = model, modifier = modifier, request = request)
+}
+
+@Composable
+private fun PicassoImagePrivate(
+  model: Any,
   modifier: Modifier = Modifier.fillMaxWidth(),
   request: RequestCreator.() -> RequestCreator = { this },
 ) {
@@ -67,9 +106,13 @@ fun PicassoImage(
         }
       }
 
-      Picasso.get()
-        .load(model)
-        .resize(width, height)
+      when (model) {
+        is Int -> Picasso.get().load(model)
+        is File -> Picasso.get().load(model)
+        is Uri -> Picasso.get().load(model)
+        is String -> Picasso.get().load(model)
+        else -> throw IllegalArgumentException("Unknown model type.")
+      }.resize(width, height)
         .let(request)
         .into(target)
 

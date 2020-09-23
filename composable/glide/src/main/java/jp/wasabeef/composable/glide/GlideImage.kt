@@ -18,6 +18,8 @@ package jp.wasabeef.composable.glide
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
+import android.net.Uri
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -38,12 +40,49 @@ import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.target.Target.SIZE_ORIGINAL
 import com.bumptech.glide.request.transition.Transition
+import java.io.File
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 @Composable
 fun GlideImage(
+  @DrawableRes model: Int,
+  modifier: Modifier = Modifier.fillMaxWidth(),
+  options: RequestOptions = RequestOptions()
+) {
+  GlideImagePrivate(model = model, modifier = modifier, options = options)
+}
+
+@Composable
+fun GlideImage(
+  model: File,
+  modifier: Modifier = Modifier.fillMaxWidth(),
+  options: RequestOptions = RequestOptions()
+) {
+  GlideImagePrivate(model = model, modifier = modifier, options = options)
+}
+
+@Composable
+fun GlideImage(
+  model: Uri,
+  modifier: Modifier = Modifier.fillMaxWidth(),
+  options: RequestOptions = RequestOptions()
+) {
+  GlideImagePrivate(model = model, modifier = modifier, options = options)
+}
+
+@Composable
+fun GlideImage(
+  model: String,
+  modifier: Modifier = Modifier.fillMaxWidth(),
+  options: RequestOptions = RequestOptions()
+) {
+  GlideImagePrivate(model = model, modifier = modifier, options = options)
+}
+
+@Composable
+private fun GlideImagePrivate(
   model: Any,
   modifier: Modifier = Modifier.fillMaxWidth(),
   options: RequestOptions = RequestOptions()

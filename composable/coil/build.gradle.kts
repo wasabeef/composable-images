@@ -46,6 +46,7 @@ dependencies {
   implementation(Libraries.kotlin)
   api(Libraries.coil)
   implementation(Libraries.coreKtx)
+  implementation(Libraries.annontation)
   implementation(Libraries.Compose.runtime)
   implementation(Libraries.Compose.foundation)
   implementation(Libraries.Compose.ui)

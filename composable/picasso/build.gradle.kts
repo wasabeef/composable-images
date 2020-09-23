@@ -45,6 +45,7 @@ android {
 dependencies {
   implementation(Libraries.kotlin)
   api(Libraries.picasso)
+  implementation(Libraries.annontation)
   implementation(Libraries.Compose.runtime)
   implementation(Libraries.Compose.foundation)
   implementation(Libraries.Compose.ui)
