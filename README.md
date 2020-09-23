@@ -27,7 +27,7 @@ A simple library for loading into Jetpack Compose Image using for [Coil], [Glide
   <img src="https://github.com/wasabeef/transformers/raw/main/art/picasso.jpg" width="64px"/>
 </a>
 <a href="https://developer.android.com/jetpack/compose">
-  <img src="https://github.com/wasabeef/transformers/raw/main/art/jetpack-compose.svg" width="64px"/>
+  <img src="https://github.com/wasabeef/transformers/raw/main/art/jetpack-compose.svg" width="100px"/>
 </a>
 
 
