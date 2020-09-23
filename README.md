@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="https://github.com/wasabeef/transformers/raw/main/art/logo.jpg" width="640px"/>
+
+  <a href="https://developer.android.com/jetpack/compose">
+    <img src="https://github.com/wasabeef/transformers/raw/main/art/jetpack-compose.svg" width="240px"/>
+  </a>
 </p>
 <p align="center">
   <a href="https://www.apache.org/licenses/LICENSE-2.0">
