@@ -60,7 +60,7 @@ extra.apply {
   set("publishedGroupId", "jp.wasabeef.composable")
   set("libraryName", "composable-images")
   set("artifact", "glide")
-  set("libraryDescription", "A simple library for loading into Jetpack Compose Image using Glide.")
+  set("libraryDescription", "The Composable Images is a library providing Jetpack Compose wrapper for Glide.")
   set("siteUrl", "https://github.com//wasabeef/transformers")
   set("gitUrl", "https://github.com//wasabeef/transformers.git")
   set("issueUrl", "https://github.com//wasabeef/transformers/issues")
