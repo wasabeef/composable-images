@@ -46,7 +46,7 @@ repositories {
 }
 ```
 
-#### For [Coil] <a href="https://github.com/bumptech/glide"><img src="https://github.com/wasabeef/composable-images/raw/main/art/coil.png" width="12px"/></a>
+#### For [Coil] <a href="https://github.com/coil-kt/coil"><img src="https://github.com/wasabeef/composable-images/raw/main/art/coil.png" width="12px"/></a>
 ```gradle
 dependencies {
   implementation 'jp.wasabeef.composable:coil:1.x.x'
@@ -63,7 +63,7 @@ CoilImage(
 }
 ```
 
-#### For [Glide] <a href="https://github.com/coil-kt/coil"><img src="https://github.com/wasabeef/composable-images/raw/main/art/glide.png" width="12px"/></a>
+#### For [Glide] <a href="https://github.com/bumptech/glide"><img src="https://github.com/wasabeef/composable-images/raw/main/art/glide.png" width="12px"/></a>
 ```gradle
 dependencies {
   implementation 'jp.wasabeef.composable:glide:1.x.x'
