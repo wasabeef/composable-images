@@ -18,7 +18,7 @@
 
 ## What is Composable Images?
 
-A simple library for loading into Jetpack Compose Image using for [Coil], [Glide], and [Picasso].
+The Composable Images is a library providing Jetpack Compose wrapper for [Coil], [Glide], and [Picasso].
 
 <a href="https://github.com/coil-kt/coil">
   <img src="https://github.com/wasabeef/composable-images/raw/main/art/coil.png" width="58px"/>
