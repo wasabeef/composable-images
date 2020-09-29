@@ -22,7 +22,6 @@ import android.net.Uri
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.onCommit
@@ -41,7 +40,7 @@ import java.io.File
 @Composable
 fun PicassoImage(
   @DrawableRes model: Int,
-  modifier: Modifier = Modifier.fillMaxWidth(),
+  modifier: Modifier = Modifier,
   request: RequestCreator.() -> RequestCreator = { this },
 ) {
   PicassoImagePrivate(model = model, modifier = modifier, request = request)
@@ -50,7 +49,7 @@ fun PicassoImage(
 @Composable
 fun PicassoImage(
   model: File,
-  modifier: Modifier = Modifier.fillMaxWidth(),
+  modifier: Modifier = Modifier,
   request: RequestCreator.() -> RequestCreator = { this },
 ) {
   PicassoImagePrivate(model = model, modifier = modifier, request = request)
@@ -59,7 +58,7 @@ fun PicassoImage(
 @Composable
 fun PicassoImage(
   model: Uri,
-  modifier: Modifier = Modifier.fillMaxWidth(),
+  modifier: Modifier = Modifier,
   request: RequestCreator.() -> RequestCreator = { this },
 ) {
   PicassoImagePrivate(model = model, modifier = modifier, request = request)
@@ -68,7 +67,7 @@ fun PicassoImage(
 @Composable
 fun PicassoImage(
   model: String,
-  modifier: Modifier = Modifier.fillMaxWidth(),
+  modifier: Modifier = Modifier,
   request: RequestCreator.() -> RequestCreator = { this },
 ) {
   PicassoImagePrivate(model = model, modifier = modifier, request = request)
@@ -77,7 +76,7 @@ fun PicassoImage(
 @Composable
 private fun PicassoImagePrivate(
   model: Any,
-  modifier: Modifier = Modifier.fillMaxWidth(),
+  modifier: Modifier = Modifier,
   request: RequestCreator.() -> RequestCreator = { this },
 ) {
   WithConstraints(modifier) {
